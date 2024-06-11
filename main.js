@@ -9,7 +9,7 @@ document.getElementById('counterButton').addEventListener('click', () => {
     if (stamina > 0) {
         counter += 1 * purchaseCount;
         stamina--;
-        document.getElementById('counterButton').innerHTML = `<img src="bMain.png" class="button-img" alt="Coin">${counter}`;
+        document.getElementById('counterButton').innerHTML = `<img src="bMain.jpg" class="button-img" alt="Coin">${counter}`;
         document.getElementById('staminaDisplay').innerText = `Stamina: ${stamina}`;
     } else {
         alert("Недостаточно выносливости для клика. Подождите восстановления.");
