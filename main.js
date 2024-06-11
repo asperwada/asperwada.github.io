@@ -1,6 +1,6 @@
 let counter = 0;
 let purchaseCount = 0;
-let stamina = 3000;
+let stamina = 3;
 const maxStamina = 2;
 const purchaseCost = 5;  // Установите требуемую сумму для покупки
 const recoveryTimeInMinutes = 360;  // Время восстановления в минутах
