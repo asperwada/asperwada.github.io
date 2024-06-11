@@ -1,5 +1,5 @@
 let counter = 0;
-let purchaseCount = 0;
+let purchaseCount = 1;
 let stamina = 3000;
 const maxStamina = 3000;
 let purchaseCost = 5;  // Начальная стоимость покупки
