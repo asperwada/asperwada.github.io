@@ -25,6 +25,9 @@
             font-size: 24px;
             cursor: pointer;
             margin: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .rect-button {
             padding: 20px 40px;
@@ -43,12 +46,17 @@
             color: white;
             margin-top: 5px;
         }
+        .button-img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
     </style>
 </head>
 <body>
     <div id="staminaDisplay">Stamina: 3000</div>
-    <button id="counterButton">0</button>
-    <button id="rectButton" class="rect-button">Купить X 1</button>
+    <button id="counterButton"><img src="path/to/coin.png" class="button-img" alt="Coin">0</button>
+    <button id="rectButton" class="rect-button">Купить X 0</button>
     <p id="price">Цена: 5</p>
     <script src="main.js"></script>
 </body>
