@@ -7,7 +7,7 @@ const recoveryTimeInMinutes = 60;  // Время восстановления в
 
 document.getElementById('counterButton').addEventListener('click', () => {
     if (stamina > 0) {
-        counter++;
+        counter += 1 * purchaseCount;
         stamina--;
         document.getElementById('counterButton').innerText = counter;
         document.getElementById('staminaDisplay').innerText = `Stamina: ${stamina}`;
