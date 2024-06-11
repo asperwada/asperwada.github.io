@@ -1,9 +1,9 @@
 let counter = 0;
 let purchaseCount = 0;
-let stamina = 3;
-const maxStamina = 2;
+let stamina = 3000;
+const maxStamina = 3000;
 const purchaseCost = 5;  // Установите требуемую сумму для покупки
-const recoveryTimeInMinutes = 360;  // Время восстановления в минутах
+const recoveryTimeInMinutes = 60;  // Время восстановления в минутах
 
 document.getElementById('counterButton').addEventListener('click', () => {
     if (stamina > 0) {
@@ -11,6 +11,7 @@ document.getElementById('counterButton').addEventListener('click', () => {
         stamina--;
         document.getElementById('counterButton').innerText = counter;
         document.getElementById('stamina').innerText = `Stamina: ${stamina}`;
+        document.getElementById('staminaDisplay').innerText = `Stamina: ${stamina}`;
     } else {
         alert("Недостаточно выносливости для клика. Подождите восстановления.");
     }
@@ -31,7 +32,8 @@ document.getElementById('rectButton').addEventListener('click', () => {
 function restoreStamina() {
     stamina = maxStamina;
     document.getElementById('stamina').innerText = `Stamina: ${stamina}`;
+    document.getElementById('staminaDisplay').innerText = `Stamina: ${stamina}`;
 }
 
 // Установить таймер для восстановления выносливости
-setInterval(restoreStamina, recoveryTimeInMinutes); // Переводим минуты в миллисекунды
+setInterval(restoreStamina, recoveryTimeInMinutes * 60 * 1000); // Переводим минуты в миллисекунды
