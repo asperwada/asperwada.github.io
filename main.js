@@ -3,7 +3,7 @@ let purchaseCount = 0;
 let stamina = 3000;
 const maxStamina = 2;
 const purchaseCost = 5;  // Установите требуемую сумму для покупки
-const recoveryTimeInMinutes = 1;  // Время восстановления в минутах
+const recoveryTimeInMinutes = 360;  // Время восстановления в минутах
 
 document.getElementById('counterButton').addEventListener('click', () => {
     if (stamina > 0) {
